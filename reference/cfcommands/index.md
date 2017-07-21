@@ -23,6 +23,8 @@ lastupdated: "2017-05-04"
 The Cloud Foundry (cf) command line interface (CLI) provides a set of commands for managing your apps. The following information lists the cf commands used most commonly for managing apps and includes their names, options, usage, prerequisites, descriptions, and examples. To list all of the cf commands and associated help information, use `cf help`. Use `cf command_name -h` to view detailed help information for a particular command.
 {: shortdesc}
 
+**Note:** {{site.data.keyword.Bluemix_notm}} CLI tool bundled a Cloud Foundry command line interface in its installation. However, it is not allowed to mix-use {{site.data.keyword.Bluemix_notm}} CLI commands `bx xxx` and Cloud Foundry CLI commands `cf xxx` if you have your own cf cli installation. Instead, use `bluemix cf` if you want to use cf cli to manage Cloud Foundry resources. In the back end, it runs commands of the bundled Cloud Foundry CLI in a shared context with the {{site.data.keyword.Bluemix_notm}} CLI.  Besides,  `bluemix cf api/login/logout/target` is not allowed, use `bluemix api/login/logout/target` instead.
+
 **Note**: If your network contains an HTTP proxy server between the host that runs the cf commands and the Cloud Foundry API endpoint, you must specify the host name or IP address of the proxy server by setting the `HTTP_PROXY` environment variable. For details, see [Using the cf CLI with an HTTP Proxy Server ![External link icon](../../../icons/launch-glyph.svg)](http://docs.cloudfoundry.org/devguide/installcf/http-proxy.html){: new_window}.
 
 
